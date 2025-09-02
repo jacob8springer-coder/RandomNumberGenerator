@@ -1,10 +1,7 @@
-#include <iostream>
 #include <cstdlib>
 #include <ctime>
-using namespace std;
-int main() {
+int rndNum(int lengthOf) { //lengthof is the length of the random number (100... format)
 	srand(time(0));
-	int rndnum = rand() % 100;
-	cout << "rnd number = " << rndnum << endl;
+	int rndnum = rand() % lengthOf;
 	return rndnum;
 }
